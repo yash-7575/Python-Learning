@@ -15,8 +15,6 @@ else:
 finally:
     print("always printed")
 print("Heyyy Cutie Pie!! ")
-'''this ans aut'''
-
 try:
     l=[1,2,3,4,5]
     print(l[6])
@@ -29,6 +27,11 @@ try:
     print('5'+3)
 except Exception as e:
     print('error: ' ,e) #TypeError
+
+try:
+    print('5'+3)
+except:
+    print('some error occured') 
 '''
 ZeroDivisionError	Dividing by 0
 ValueError	        Wrong type conversion (int("abc"))

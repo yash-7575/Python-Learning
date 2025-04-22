@@ -54,3 +54,23 @@ try:
     raise CustomError("This is a custom error")
 except CustomError as e:
     print("Error:", e)
+
+a=int(input("Enter Value between 5 and 9 "))
+if(a>9 or a<5):
+    raise ValueError("Value should be 5 to 9")
+else:
+    print("Good")
+
+try:
+    l=[1,2,3,4]
+    a=int(input("Enter index "))
+    if a>3 or a<0:
+        raise IndexError("Enter index from 0 to 3")
+    else:
+        print(l[a])
+    
+except Exception as e:
+    ''' Jo bhi error generate huyi usko e me store kro and print krdo '''
+    print("Error:", e)
+finally:
+    print("Always Executed")
